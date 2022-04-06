@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- cdn to link bootstrap css-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+       <!--material google icons link-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="./app.css" rel="stylesheet">
+    <script defer src="app.js"></script>
+    <title>Frontend Assignment</title>
+</head>
+<body>
+    <!-- menu list/navbar starts here -->
+    <navbar>
+        <ul class="menu_list">
+            <li class="menu_list_item">
+                <span class="material-icons">all_inclusive </span>
+
+            </li>
+
+            <li class="menu_list_item">
+                <span class="material-icons">home</span>
+                <a href="#">Home</a>
+                
+            </li>
+
+            <li class="menu_list_item">
+                <span class="material-icons" onclick="showMeModal()">person </span>
+                <a href="#me_menu_modal"  onclick="showMeModal()">Me</a>
+                
+            </li>
+
+            <li class="menu_list_item">
+                <span class="material-icons" onclick="showDashModal()">dashboard </span>
+                <a href="#" onclick="showDashModal()">Dashboard</a>
+               
+            </li>
+        </ul>
+    </navbar>
+
+    <!-- nav bar ends here -->
+
+    <!--carasoul/slideshow home page starts here-->
+    <div class="homepageSlider">
+        <div class="carasoul" id="homepage_carasoul">
+
+        </div>
+    </div>
+    <!--carasoul/slideshow home page ends here-->
+
+    <!-- division for information regaerding current selection -->
+    <div class="selectionMenu">
+        <div class="selectionMenu_items">
+         <h4>Trainings</h4>
+        </div>
+
+    </div>
+
+    <!-- selection of training -->
+   <div class="select_container" id="">
+    <select class="select_main" onchange = "showDataAfterSelection(this.value)"; id="select_main">
+       
+    </select>
+
+    <div class="showingResultCount">
+        <h5 id="showingResultCount"></h5>
+    </div>
+   </div>
+
+<!--selection of training ends here-->
+<!--cards to show each training starts here-->
+<div class="cards_container_initial" id="cards_container_initial">
+  
+    
+
+</div>
+
+<div class="cards_container_filtered" id="cards_container_filtered">
+   
+
+</div>
+
+</div>
+
+<!--cards to show each training ends here-->
+
+
+<!-- modal for me button-->
+<div class="me_menu_modal" id="me_menu_modal">
+    <h3>We are working on it, to get you a beautifull account.</h3>
+    <button class="btn btn-success"id="close_me_modal" onclick="closeMeModal()">OK! Understood</button>
+</div>
+
+<!--modal for me button ends-->
+
+<!-- modal for dashboard button-->
+<div class="dashboard_menu_modal" id="dashboard_menu_modal">
+    <h3>We are working on it, to get you a beatifull dashboard.</h3>
+    <button class="btn btn-success"id="close_dash_modal" onclick="closeDashModal()">OK! Understood</button>
+</div>
+
+<!--modal for  dashboard ends-->
+
+
+<!-- modal for enroll button-->
+<div class="enroll_modal" id="enroll_modal">
+    <h3>Thank You for interest. We'll get back to you.</h3>
+    <button class="btn btn-success"id="close_enroll_modal" onclick="closeEnrollModal()">OK! Understood</button>
+</div>
+
+<!--modal for enroll ends-->
+
+<!-- modal for enroll button-->
+<div class="card_session_modal" id="card_session_modal">
+    <h3 id="detailsSession">card_session_modal</h3>
+    <button class="btn btn-success"id="close_session_modal" onclick="closeSessionlModal()">OK! Understood</button>
+</div>
+
+<!--modal for enroll ends-->
+</body>
+</html>
