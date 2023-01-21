@@ -58,7 +58,7 @@ a:hover{
 .carasoul {
     display:block;
     position:relative;
-    background:url(../static/first.jpg);
+    background:url(/first.jpg);
     background-repeat:no-repeat;
     background-size: 100% 100%;
     width:100%;
@@ -71,16 +71,16 @@ a:hover{
 
 @keyframes slider {
     0%{
-        background: url(../static/first.jpg);
+        background: url(/first.jpg);
     }
     25%{
-        background: url(../static/second.jpg);
+        background: url(/second.jpg);
     }
     50%{
-        background: url(../static/third.jpg);
+        background: url(/third.jpg);
     }
     75%{
-        background: url(../static/fourth.jpg);
+        background: url(/fourth.jpg);
     }
 }
 
