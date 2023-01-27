@@ -28,7 +28,7 @@ const fillCardsAfterSelection = (data,value)=>{
     }else{
        
         cards_container_filtered.innerHTML =
-  `      <div class="card" style="border: 1px solid #EBD8C3; margin:10px; box-shadow: 0 0 10px gray; padding:5px; align:center">
+        `<div class="card" style="border: 1px solid #EBD8C3; margin:10px; box-shadow: 0 0 10px gray; padding:5px; align:center">
         <div class="card-body">
         <img class="card-img-top" src="${data[value].trainingImage}" alt="Card image cap">
           <h5 class="card-title">${data[value].trainer}</h5>
@@ -186,6 +186,18 @@ const closeDashModal = ()=>{
 }
 
 
+//show modal for postoffice api
+const postofficeapi_menu_modal = document.getElementById('postofficeapi_menu_modal');
+const showPostOfficeApiModal = ()=>{
+    postofficeapi_menu_modal.style.display = "flex";
+}
+
+//close modal for postoffice api
+
+const closePostOfficeApiModal = ()=>{
+    postofficeapi_menu_modal.style.display = "none";
+}
+
 //close enroll modal
 
 const closeEnrollModal = ()=>{
@@ -198,4 +210,82 @@ const closeEnrollModal = ()=>{
 const closeSessionlModal = ()=>{
     const card_session_modal = document.getElementById('card_session_modal');
     card_session_modal.style.display = "none";
+}
+
+
+
+//store post office api data globally copy data of object inside object using spread operator
+let resData;
+
+
+//function to put recieved post office api data to modal as list
+
+let spaceApiData = document.getElementById('space_api_data');
+const putDataToList = ()=>{
+
+    let postOffLen = resData[0].PostOffice.length;
+
+    //create list to put post office data li under ul
+
+    let dl = document.createElement('dl');
+    dl.style.backgroundColor = "white";
+    dl.style.padding = "20px";
+
+    for(let i=0;i<postOffLen;i++){
+        let dt = document.createElement('dt');
+        let dd = document.createElement('dd');
+        dd.style.color = "red";
+        dt.textContent = i+1 + " "+ resData[0].PostOffice[i].Name;
+        dd.textContent = "DeliveryStatus" + ": " + resData[0].PostOffice[i].DeliveryStatus + " " +
+        "Block" + ": " + resData[0].PostOffice[i].Block + " " +
+        "Region" + ": " + resData[0].PostOffice[i].Region + " " +
+        "State" + ": " + resData[0].PostOffice[i].State;
+
+
+        dd.style.fontSize = "x-small";
+        dt.appendChild(dd);
+        dl.appendChild(dt);
+        
+    }
+    console.log(spaceApiData)
+    spaceApiData.appendChild(dl);
+    
+}
+
+
+//get data for api on call to backend
+
+
+
+let inputPicode = document.getElementById('input_pincode');
+const showDataPostOfficeApi = ()=>{
+    let url = "https://api.postalpincode.in/pincode/";
+    
+    let inpLen = inputPicode.value.length;
+
+    if(inpLen == "" || inpLen == null){
+        window.alert("Please enter a valid Pincode.");
+        inputPicode.focus();
+        return;
+    }if(isNaN(inputPicode.value)){
+        window.alert("Please enter a valid Pincode.");
+        inputPicode.focus();
+        return;
+    }if(inpLen >=7 || inpLen <=5){
+        window.alert("Please enter a valid Pincode.");
+        inputPicode.focus();
+        return;
+    }
+   fetch(url + inputPicode.value).then((res)=>res.json()).then((data)=>{
+            resData = {
+                ...data
+            }
+
+            console.log("this is res data");
+            console.log(resData);
+
+            //put data to list that is recieved from post office api
+            putDataToList();
+   });
+    
 }

@@ -58,29 +58,29 @@ a:hover{
 .carasoul {
     display:block;
     position:relative;
-    background:url(/first.jpg);
+    background:url(images/first.jpeg);
     background-repeat:no-repeat;
     background-size: 100% 100%;
     width:100%;
     height:300px;
     margin: auto;
     margin-top: 2px;
-    animation: slider 12s linear infinite;
+    animation: slider 20s linear infinite;
     border: #EBD8C3 2px solid;
 }
 
 @keyframes slider {
     0%{
-        background: url(/first.jpg);
+        background: url(images/first.jpeg);
     }
     25%{
-        background: url(/second.jpg);
+        background: url(images/second.webp);
     }
     50%{
-        background: url(/third.jpg);
+        background: url(images/third.jpg);
     }
     75%{
-        background: url(/fourth.jpg);
+        background: url(images/fourth.webp);
     }
 }
 

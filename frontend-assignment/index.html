@@ -40,6 +40,11 @@
                 <a href="#" onclick="showDashModal()">Dashboard</a>
                
             </li>
+            <li class="menu_list_item">
+                <span class="material-icons" onclick="showPostOfficeApiModal()">phone </span>
+                <a href="#" onclick="showPostOfficeApiModal()">Post office</a>
+               
+            </li>
         </ul>
     </navbar>
 
@@ -105,6 +110,18 @@
 </div>
 
 <!--modal for  dashboard ends-->
+
+
+<!-- modal for post office button-->
+<div class="dashboard_menu_modal" id="postofficeapi_menu_modal">
+    <h3>Welcome to Post office API</h3>
+    <input type="text" id="input_pincode" placeholder="enter the pincode to get info" style="padding: 20px;">
+    <button class="btn btn-success"id="showdata_postofficapi_modal" onclick="showDataPostOfficeApi()">Get Data</button>
+    <button class="btn btn-danger"id="close_dash_modal" onclick="closePostOfficeApiModal()">Close Window</button>
+    <p id="space_api_data"></p>
+</div>
+
+<!--modal for  post office ends-->
 
 
 <!-- modal for enroll button-->
