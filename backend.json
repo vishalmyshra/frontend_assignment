@@ -1,241 +1,436 @@
 [{
-	"trainingName": "Stress Management",
-	"trainingId":212,
-	"trainer":"Ajay Ahuja, CI",
-	"trainingDate": "17 June 2021, 10:00 AM -6:30 PM IST",
-	"trainingDescription":"Get trained to manage stress in the period of pandemic .",
-	"trainingImage":"images/training1.jpg",
-	"assessmentDate":"22 June, 2021",
-	"cost": "600 INR",
-	"sessionDetails":[
-		{
-			"sessionName":"Cause of Stress",
-			"sessionId":801,
-			"sessionDate":"18 June, 2021",
-			"sessionTime":"10:30 AM - 12:30 PM IST"
-		},
-		{
-			"sessionName":"Impact of stress on human body",
-			"sessionId":802,
-			"sessionDate":"18 June, 2021",
-			"sessionTime":"01:30 PM - 03:30 PM IST"
-		},
-		{
-			"sessionName":"How to reduce Stress",
-			"sessionId":803,
-			"sessionDate":"18 June, 2021",
-			"sessionTime":"04:30 PM - 05:30 PM IST"
-		}
-	]
+	"SNO" : 1,
+	"CODE" :"AR",
+	"DISTRICT" :"Araria",
+	"DHEADQAUTERS" : "Araria",
+	"POPULATION" : 2811569,
+	"AREAKMSQUARE" : 2829,
+	"DENSITYPERKMSQARE" : 751,
+	"url" : "images/bidisimg/araria_map.png"
+	
 },
 {
-	"trainingName": "Basics of SCM",
-	"trainingId":213,
-	"trainer":"Ankur Ahuja, CII",
-	"trainingDate": "17 June 2021, 10:00 AM -6:30 PM IST",
-	"trainingDescription":"Get trained - SCM",
-	"trainingImage":"images/training2.jpg",
-	"assessmentDate":"22 June, 2021",
-	"cost": "600 INR",
-	"sessionDetails":[
-		{
-			"sessionName":"SCM Session 1",
-			"sessionId":901,
-			"sessionDate":"18 June, 2021",
-			"sessionTime":"10:30 AM - 12:30 PM IST"
-		},
-		{
-			"sessionName":"SCM Session 2",
-			"sessionId":902,
-			"sessionDate":"18 June, 2021",
-			"sessionTime":"01:30 PM - 03:30 PM IST"
-		},
-		{
-			"sessionName":"SCM Session 3",
-			"sessionId":903,
-			"sessionDate":"18 June, 2021",
-			"sessionTime":"04:30 PM - 05:30 PM IST"
-		}
-	]
+	"SNO" : 2,
+	"CODE" :"AW",
+	"DISTRICT" :"Arwal",
+	"DHEADQAUTERS" : "Arwal",
+	"POPULATION" : 699000,
+	"AREAKMSQUARE" : 637,
+	"DENSITYPERKMSQARE" : 918,
+	"url" : "images/bidisimg/arwal_map.png"
 },
 {
-	"trainingName": "Changing Industry Standards",
-	"trainingId":214,
-	"trainer":"rohit Ahuja, CIII",
-	"trainingDate": "17 June 2021, 10:00 AM -6:30 PM IST",
-	"trainingDescription":"Industry standards 101",
-	"trainingImage":"images/training1.jpg",
-	"assessmentDate":"22 June, 2021",
-	"cost": "600 INR",
-	"sessionDetails":[
-		{
-			"sessionName":"Class 1",
-			"sessionId":101,
-			"sessionDate":"18 June, 2021",
-			"sessionTime":"10:30 AM - 12:30 PM IST"
-		},
-		{
-			"sessionName":"Class 2",
-			"sessionId":102,
-			"sessionDate":"18 June, 2021",
-			"sessionTime":"01:30 PM - 03:30 PM IST"
-		},
-		{
-			"sessionName":"Class 3",
-			"sessionId":103,
-			"sessionDate":"18 June, 2021",
-			"sessionTime":"04:30 PM - 05:30 PM IST"
-		}
-	]
+	"SNO" : 3,
+	"CODE" :"AU",
+	"DISTRICT" :"Aurangabad",
+	"DHEADQAUTERS" : "Aurangabad",
+	"POPULATION" : 2540073,
+	"AREAKMSQUARE" : 3303,
+	"DENSITYPERKMSQARE" : 607,
+	"url" : "images/bidisimg/aurangabad_map.png"
+
+
 },
 {
-	"trainingName": "Changing Industry Standards",
-	"trainingId":214,
-	"trainer":"Vishal Ahuja, CIII",
-	"trainingDate": "17 June 2021, 10:00 AM -6:30 PM IST",
-	"trainingDescription":"Industry standards 101",
-	"trainingImage":"images/training1.jpg",
-	"assessmentDate":"22 June, 2021",
-	"cost": "600 INR",
-	"sessionDetails":[
-		{
-			"sessionName":"Class 1",
-			"sessionId":101,
-			"sessionDate":"18 June, 2021",
-			"sessionTime":"10:30 AM - 12:30 PM IST"
-		},
-		{
-			"sessionName":"Class 2",
-			"sessionId":102,
-			"sessionDate":"18 June, 2021",
-			"sessionTime":"01:30 PM - 03:30 PM IST"
-		},
-		{
-			"sessionName":"Class 3",
-			"sessionId":103,
-			"sessionDate":"18 June, 2021",
-			"sessionTime":"04:30 PM - 05:30 PM IST"
-		}
-	]
+	"SNO" : 4,
+	"CODE" :"BA",
+	"DISTRICT" :"Banka",
+	"DHEADQAUTERS" : "Banka",
+	"POPULATION" : 2034763,
+	"AREAKMSQUARE" : 3018,
+	"DENSITYPERKMSQARE" : 533,
+	"url" : "images/bidisimg/banka_map.png"
 },
 {
-	"trainingName": "Changing Industry Standards",
-	"trainingId":214,
-	"trainer":"pankaj Ahuja, CIII",
-	"trainingDate": "17 June 2021, 10:00 AM -6:30 PM IST",
-	"trainingDescription":"Industry standards 101",
-	"trainingImage":"images/training1.jpg",
-	"assessmentDate":"22 June, 2021",
-	"cost": "600 INR",
-	"sessionDetails":[
-		{
-			"sessionName":"Class 1",
-			"sessionId":101,
-			"sessionDate":"18 June, 2021",
-			"sessionTime":"10:30 AM - 12:30 PM IST"
-		},
-		{
-			"sessionName":"Class 2",
-			"sessionId":102,
-			"sessionDate":"18 June, 2021",
-			"sessionTime":"01:30 PM - 03:30 PM IST"
-		},
-		{
-			"sessionName":"Class 3",
-			"sessionId":103,
-			"sessionDate":"18 June, 2021",
-			"sessionTime":"04:30 PM - 05:30 PM IST"
-		}
-	]
+	"SNO :" : 5,
+	"CODE" :"BE",
+	"DISTRICT" :"Begusarai",
+	"DHEADQAUTERS" : "Begusarai",
+	"POPULATION" : 2970541,
+	"AREAKMSQUARE" : 1917,
+	"DENSITYPERKMSQARE" : 1222,
+	"url" : "images/bidisimg/begusarai_map.png"
+	
 },
 {
-	"trainingName": "Changing Industry Standards",
-	"trainingId":214,
-	"trainer":"puneet Ahuja, CIII",
-	"trainingDate": "17 June 2021, 10:00 AM -6:30 PM IST",
-	"trainingDescription":"Industry standards 101",
-	"trainingImage":"images/training1.jpg",
-	"assessmentDate":"22 June, 2021",
-	"cost": "600 INR",
-	"sessionDetails":[
-		{
-			"sessionName":"Class 1",
-			"sessionId":101,
-			"sessionDate":"18 June, 2021",
-			"sessionTime":"10:30 AM - 12:30 PM IST"
-		},
-		{
-			"sessionName":"Class 2",
-			"sessionId":102,
-			"sessionDate":"18 June, 2021",
-			"sessionTime":"01:30 PM - 03:30 PM IST"
-		},
-		{
-			"sessionName":"Class 3",
-			"sessionId":103,
-			"sessionDate":"18 June, 2021",
-			"sessionTime":"04:30 PM - 05:30 PM IST"
-		}
-	]
+	"SNO" : 6,
+	"CODE" :"BG",
+	"DISTRICT" :"Bhagalpur",
+	"DHEADQAUTERS" : "Bhagalpur",
+	"POPULATION" : 3037766,
+	"AREAKMSQUARE" : 2569,
+	"DENSITYPERKMSQARE" : 946,
+	"url" : "images/bidisimg/bhagalpur_map.png"
+	
 },
 {
-	"trainingName": "Changing Industry Standards",
-	"trainingId":214,
-	"trainer":"ashish Ahuja, CIII",
-	"trainingDate": "17 June 2021, 10:00 AM -6:30 PM IST",
-	"trainingDescription":"Industry standards 101",
-	"trainingImage":"images/training1.jpg",
-	"assessmentDate":"22 June, 2021",
-	"cost": "600 INR",
-	"sessionDetails":[
-		{
-			"sessionName":"Class 1",
-			"sessionId":101,
-			"sessionDate":"18 June, 2021",
-			"sessionTime":"10:30 AM - 12:30 PM IST"
-		},
-		{
-			"sessionName":"Class 2",
-			"sessionId":102,
-			"sessionDate":"18 June, 2021",
-			"sessionTime":"01:30 PM - 03:30 PM IST"
-		},
-		{
-			"sessionName":"Class 3",
-			"sessionId":103,
-			"sessionDate":"18 June, 2021",
-			"sessionTime":"04:30 PM - 05:30 PM IST"
-		}
-	]
+	"SNO" : 7,
+	"CODE" :"BJ",
+	"DISTRICT" :"Bhojpur",
+	"DHEADQAUTERS" : "Arrah",
+	"POPULATION" : 2728407,
+	"AREAKMSQUARE" : 2473,
+	"DENSITYPERKMSQARE" : 903,
+	"url" : "images/bidisimg/bhojpur_map.png"
+	
 },
 {
-	"trainingName": "Changing Industry Standards",
-	"trainingId":214,
-	"trainer":"aquib Ahuja, CIII",
-	"trainingDate": "17 June 2021, 10:00 AM -6:30 PM IST",
-	"trainingDescription":"Industry standards 101",
-	"trainingImage":"images/training1.jpg",
-	"assessmentDate":"22 June, 2021",
-	"cost": "600 INR",
-	"sessionDetails":[
-		{
-			"sessionName":"Class 1",
-			"sessionId":101,
-			"sessionDate":"18 June, 2021",
-			"sessionTime":"10:30 AM - 12:30 PM IST"
-		},
-		{
-			"sessionName":"Class 2",
-			"sessionId":102,
-			"sessionDate":"18 June, 2021",
-			"sessionTime":"01:30 PM - 03:30 PM IST"
-		},
-		{
-			"sessionName":"Class 3",
-			"sessionId":103,
-			"sessionDate":"18 June, 2021",
-			"sessionTime":"04:30 PM - 05:30 PM IST"
-		}
-	]
+	"SNO" : 8,
+	"CODE" :"BU",
+	"DISTRICT" :"Buxar",
+	"DHEADQAUTERS" : "Buxar",
+	"POPULATION" : 1706352,
+	"AREAKMSQUARE" : 1624,
+	"DENSITYPERKMSQARE" : 864,
+	"url" : "images/bidisimg/buxar_map.png"
+
+},
+{
+	"SNO" : 9,
+	"CODE" :"DA",
+	"DISTRICT" :"Darbhanga",
+	"DHEADQAUTERS" : "Darbhanga",
+	"POPULATION" : 3937385,
+	"AREAKMSQUARE" : 2278,
+	"DENSITYPERKMSQARE" : 1442,
+	"url" : "images/bidisimg/darbhanga_map.png"
+
+},
+{
+	"SNO" : 10,
+	"CODE" :"EC",
+	"DISTRICT" :"East Champaran",
+	"DHEADQAUTERS" : "Motihari",
+	"POPULATION" :4391418,
+	"AREAKMSQUARE" : 4978,
+	"DENSITYPERKMSQARE" : 696,
+	"url" : "images/bidisimg/east_champaran_map.png"
+	
+	
+},
+{
+	"SNO" : 11,
+	"CODE" :"GA",
+	"DISTRICT" :"Gaya",
+	"DHEADQAUTERS" : "Gaya",
+	"POPULATION" : 2811569,
+	"AREAKMSQUARE" : 2829,
+	"DENSITYPERKMSQARE" : 751,
+	"url" : "images/bidisimg/gaya_map.png"
+	
+
+},
+{
+	"SNO" : 12,
+	"CODE" :"GO",
+	"DISTRICT" :"Gopalganj",
+	"DHEADQAUTERS" : "Gopalganj",
+	"POPULATION" : 2562012,
+	"AREAKMSQUARE" : 2033,
+	"DENSITYPERKMSQARE" : 1057,
+	"url" : "images/bidisimg/gopalganj_map.png"	
+	
+},
+{
+	"SNO" : 13,
+	"CODE" :"JA",
+	"DISTRICT" :"Jamui",
+	"DHEADQAUTERS" : "Jamui",
+	"POPULATION" : 1760405,
+	"AREAKMSQUARE" : 3099,
+	"DENSITYPERKMSQARE" : 451,
+	"url" : "images/bidisimg/jamui_map.png"
+	
+},
+{
+	"SNO" : 14,
+	"CODE" :"JE",
+	"DISTRICT" :"Jehanabad",
+	"DHEADQAUTERS" : "Jehanabad",
+	"POPULATION" : 1125313,
+	"AREAKMSQUARE" : 1569,
+	"DENSITYPERKMSQARE" : 963,
+	"url" : "images/bidisimg/jehanabad_map.png"
+	
+
+},
+{
+	"SNO" : 15,
+	"CODE" :"KH",
+	"DISTRICT" :"Khagaria",
+	"DHEADQAUTERS" : "Khagaria",
+	"POPULATION" : 1666886,
+	"AREAKMSQUARE" : 1486,
+	"DENSITYPERKMSQARE" : 859,
+	"url" : "images/bidisimg/khagaria_map.png"
+	
+},
+{
+	"SNO" : 16,
+	"CODE" :"KI",
+	"DISTRICT" :"Kishanganj",
+	"DHEADQAUTERS" : "Kishanganj",
+	"POPULATION" : 1690400,
+	"AREAKMSQUARE" : 1884,
+	"DENSITYPERKMSQARE" : 687,
+	"url" : "images/bidisimg/kishanganj_map.png"
+	
+},
+{
+	"SNO" : 17,
+	"CODE" :"KM",
+	"DISTRICT" :"Kaimur",
+	"DHEADQAUTERS" : "Bhabua",
+	"POPULATION" : 1626384,
+	"AREAKMSQUARE" : 3363,
+	"DENSITYPERKMSQARE" : 382,
+	"url" : "images/bidisimg/kaimur_map.png"
+	
+
+},
+{
+	"SNO" : 18,
+	"CODE" :"KT",
+	"DISTRICT" :"Katihar",
+	"DHEADQAUTERS" : "Katihar",
+	"POPULATION" : 3071029,
+	"AREAKMSQUARE" : 3056,
+	"DENSITYPERKMSQARE" : 782,
+	"url" : "images/bidisimg/katihar_map.png"
+	
+},
+{
+	"SNO" : 19,
+	"CODE" :"LA",
+	"DISTRICT" :"Lakhisarai",
+	"DHEADQAUTERS" : "Lakhisarai",
+	"POPULATION" : 1000912,
+	"AREAKMSQUARE" : 1229,
+	"DENSITYPERKMSQARE" : 652,
+	"url" : "images/bidisimg/lakhisarai_map.png"
+	
+
+},
+{
+	"SNO" : 20,
+	"CODE" :"MB",
+	"DISTRICT" :"Madhubani",
+	"DHEADQAUTERS" : "Madhubani",
+	"POPULATION" : 4487379,
+	"AREAKMSQUARE" : 3501,
+	"DENSITYPERKMSQARE" : 1020,
+	"url" : "images/bidisimg/madhubani_map.png"
+	
+},
+{
+	"SNO" : 21,
+	"CODE" :"AR",
+	"DISTRICT" :"Munger",
+	"DHEADQAUTERS" : "Munger",
+	"POPULATION" : 1367765,
+	"AREAKMSQUARE" : 1419,
+	"DENSITYPERKMSQARE" : 800,
+	"url" : "images/bidisimg/munger_map.png"
+	
+	
+},
+{
+	"SNO" : 22,
+	"CODE" :"MP",
+	"DISTRICT" :"Madhepura",
+	"DHEADQAUTERS" : "Madhepura",
+	"POPULATION" : 2001762,
+	"AREAKMSQUARE" : 1787,
+	"DENSITYPERKMSQARE" : 853,
+	"url" : "images/bidisimg/madhepura_map.png"
+	
+
+},
+{
+	"SNO" : 23,
+	"CODE" :"MZ",
+	"DISTRICT" :"Muzaffarpur",
+	"DHEADQAUTERS" : "Muzaffarpur",
+	"POPULATION" : 4801062,
+	"AREAKMSQUARE" : 3173,
+	"DENSITYPERKMSQARE" : 1180,
+	"url" : "images/bidisimg/muzaffarpur_map.png"
+	
+},
+{
+	"SNO" : 24,
+	"CODE" :"NL",
+	"DISTRICT" :"Nalanda",
+	"DHEADQAUTERS" : "Bihar Sharif",
+	"POPULATION" : 2877653,
+	"AREAKMSQUARE" : 2354,
+	"DENSITYPERKMSQARE" : 1006,
+	"url" : "images/bidisimg/nalanda_map.png"
+	
+
+},
+{
+	"SNO" : 25,
+	"CODE" :"NW",
+	"DISTRICT" :"Nawada",
+	"DHEADQAUTERS" : "Nawada",
+	"POPULATION" : 2219146,
+	"AREAKMSQUARE" : 2492,
+	"DENSITYPERKMSQARE" : 726,
+	"url" : "images/bidisimg/nawada_map.png"
+	
+
+},
+{
+	"SNO" : 26,
+	"CODE" :"PA",
+	"DISTRICT" :"Patna",
+	"DHEADQAUTERS" : "Patna",
+	"POPULATION" : 5838465,
+	"AREAKMSQUARE" : 3202,
+	"DENSITYPERKMSQARE" : 1471,
+	"url" : "images/bidisimg/patna_map.png"
+	
+
+},
+{
+	"SNO" : 27,
+	"CODE" :"PU",
+	"DISTRICT" :"Purnia",
+	"DHEADQAUTERS" : "Purnia",
+	"POPULATION" : 3264619,
+	"AREAKMSQUARE" : 3228,
+	"DENSITYPERKMSQARE" : 787,
+	"url" : "images/bidisimg/purnia_map.png"
+	
+
+},
+{
+	"SNO" : 28,
+	"CODE" :"RO",
+	"DISTRICT" :"Rohtas",
+	"DHEADQAUTERS" : "Sasaram",
+	"POPULATION" : 2959918,
+	"AREAKMSQUARE" : 3850,
+	"DENSITYPERKMSQARE" : 636,
+	"url" : "images/bidisimg/rohtas_map.png"
+	
+	
+},
+{
+	"SNO" : 29,
+	"CODE" :"SH",
+	"DISTRICT" :"Saharsa",
+	"DHEADQAUTERS" : "Saharsa",
+	"POPULATION" : 1900661,
+	"AREAKMSQUARE" : 1702,
+	"DENSITYPERKMSQARE" : 885,
+	"url" : "images/bidisimg/saharsa_map.png"
+	
+
+},
+{
+	"SNO" : 30,
+	"CODE" :"SM",
+	"DISTRICT" :"Samastipur",
+	"DHEADQAUTERS" : "Samastipur",
+	"POPULATION" : 4261566,
+	"AREAKMSQUARE" : 2905,
+	"DENSITYPERKMSQARE" : 1175,
+	"url" : "images/bidisimg/samastipur_map.png"
+	
+
+},
+{
+	"SNO" : 31,
+	"CODE" :"SO",
+	"DISTRICT" :"Sheohar",
+	"DHEADQAUTERS" : "Sheohar",
+	"POPULATION" : 656916,
+	"AREAKMSQUARE" : 443,
+	"DENSITYPERKMSQARE" : 1161,
+	"url" : "images/bidisimg/sheohar_map.png"
+	
+	
+},
+{
+	"SNO" : 32,
+	"CODE" :"SP",
+	"DISTRICT" :"Sheikhpura",
+	"DHEADQAUTERS" : "Sheikhpura",
+	"POPULATION" : 634927,
+	"AREAKMSQUARE" : 689,
+	"DENSITYPERKMSQARE" : 762,
+	"url" : "images/bidisimg/sheikhpura_map.png"
+	
+},
+{
+	"SNO" : 33,
+	"CODE" :"SR",
+	"DISTRICT" :"Saran",
+	"DHEADQAUTERS" : "Chhapra",
+	"POPULATION" : 3951862,
+	"AREAKMSQUARE" : 2641,
+	"DENSITYPERKMSQARE" : 1231,
+	"url" : "images/bidisimg/saran_map.png"
+
+},
+{
+	"SNO" : 34,
+	"CODE" :"ST",
+	"DISTRICT" :"Sitamarhi",
+	"DHEADQAUTERS" : "Dumra, Sitamarhi",
+	"POPULATION" : 3423574,
+	"AREAKMSQUARE" : 2199,
+	"DENSITYPERKMSQARE" : 1214,
+	"url" : "images/bidisimg/sitamarhi_map.png"
+	
+},
+{
+	"SNO" : 35,
+	"CODE" :"SU",
+	"DISTRICT" :"Supaul",
+	"DHEADQAUTERS" : "Supaul",
+	"POPULATION" : 2229076,
+	"AREAKMSQUARE" : 2410,
+	"DENSITYPERKMSQARE" : 724,
+	"url" : "images/bidisimg/supaul_map.png"
+	
+
+},
+{
+	"SNO" : 36,
+	"CODE" :"SW",
+	"DISTRICT" :"Siwan",
+	"DHEADQAUTERS" : "Siwan",
+	"POPULATION" : 3330464,
+	"AREAKMSQUARE" : 2219,
+	"DENSITYPERKMSQARE" : 1221,
+	"url" : "images/bidisimg/siwan_map.png"
+	
+	
+},
+{
+	"SNO" : 37,
+	"CODE" :"VA",
+	"DISTRICT" :"Vaishali",
+	"DHEADQAUTERS" : "Hajipur",
+	"POPULATION" : 3495021,
+	"AREAKMSQUARE" : 2036,
+	"DENSITYPERKMSQARE" :1332,
+	"url" : "images/bidisimg/vaishali_map.png"
+	
+	
+},
+{
+	"SNO" : 38,
+	"CODE" :"WC",
+	"DISTRICT" :"West Champaran",
+	"DHEADQAUTERS" : "Bettiah",
+	"POPULATION" : 3935042,
+	"AREAKMSQUARE" : 5229,
+	"DENSITYPERKMSQARE" : 582,
+	"url" : "images/bidisimg/west_champaran_map.png"
+
 }
 ]
