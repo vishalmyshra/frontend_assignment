@@ -33,8 +33,9 @@ const fillCardsAfterSelection = (value)=>{
         `<div class="card" style="border: 1px solid #EBD8C3; margin:10px; box-shadow: 0 0 10px gray; padding:5px; align:center">
         <div class="card-body">
         <img class="card-img-top" src="${mainApiData[value].url}" alt="Card image cap">
-          <h5 class="card-title">${mainApiData[value].DISTRICT}</h5>
-          <p class="card-text">${mainApiData[value].DHEADQAUTERS}</p>
+        <h5 class="card-title">${mainApiData[value].DISTRICT}</h5>
+        <p class="card-text"> District Code :  ${mainApiData[value].CODE}</p>
+        <p class="card-text"> Population :  ${mainApiData[value].POPULATION}</p>
           <a href="#"  class="btn btn-primary btn-sm btnDetails"> Know More</a>
         <a href="#" class="btn btn-success btn-sm btnEnroll" >Visit Wiki</a>
         </div>
@@ -160,10 +161,21 @@ document.addEventListener('DOMContentLoaded',showDataOnLoad)
 
 //show modal when me menu is clicked
 const me_menu_modal = document.getElementById('me_menu_modal');
-const showMeModal = ()=>{
+const close_me_modal_btn = document.getElementById('close_me_modal_btn');
 
+const showMeModal = ()=>{
     me_menu_modal.style.display = 'flex';
-}
+    let img = document.createElement('img');
+    let pTag = document.createElement('p');
+    pTag.textContent = "Scan the QR to visit my portfolio";
+    me_menu_modal.appendChild(pTag);
+    img.style.width = "25%";
+    img.style.height = "25%";
+    img.src = "images/qr-portfolio-netlify.png";
+    me_menu_modal.appendChild(img);
+    close_me_modal_btn.style.display = 'flex';
+    }
+
 
 const closeMeModal = ()=>{
     me_menu_modal.style.display = 'none';
