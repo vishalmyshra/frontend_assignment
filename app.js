@@ -9,10 +9,12 @@ const detailsSession = document.getElementById('detailsSession');
 let value;
 let cardsCount = 0;
 
+//this object stores data recieved from main json data of bihar
+let mainApiData = [];
 
 //shows filtered card after an option is selected from select menu
 
-const fillCardsAfterSelection = (data,value)=>{
+const fillCardsAfterSelection = (value)=>{
 
     cards_container_initial.style.display = "none";
     cards_container_filtered.style.display = "flex";
@@ -24,21 +26,19 @@ const fillCardsAfterSelection = (data,value)=>{
        // fillCardsInitialLoad(data);
        cards_container_filtered.style.display = "none"
        cards_container_initial.style.display = "flex";
-       showingResultCount.innerHTML = "Showing Results : " + data.length;;
+       showingResultCount.innerHTML = "Showing Results : " + mainApiData.length;;
     }else{
        
         cards_container_filtered.innerHTML =
         `<div class="card" style="border: 1px solid #EBD8C3; margin:10px; box-shadow: 0 0 10px gray; padding:5px; align:center">
         <div class="card-body">
-        <img class="card-img-top" src="${data[value].trainingImage}" alt="Card image cap">
-          <h5 class="card-title">${data[value].trainer}</h5>
-          <p class="card-text">${data[value].trainingName}</p>
-          <a href="#"  class="btn btn-primary btn-sm btnDetails" >Details</a>
-          <a href="#" class="btn btn-success btn-sm btnEnroll" >Enroll</a>
+        <img class="card-img-top" src="${mainApiData[value].url}" alt="Card image cap">
+          <h5 class="card-title">${mainApiData[value].DISTRICT}</h5>
+          <p class="card-text">${mainApiData[value].DHEADQAUTERS}</p>
+          <a href="#"  class="btn btn-primary btn-sm btnDetails"> Know More</a>
+        <a href="#" class="btn btn-success btn-sm btnEnroll" >Visit Wiki</a>
         </div>
       </div>`
-        
-
     }
 
      //shows and call enroll modal
@@ -62,35 +62,23 @@ const fillCardsAfterSelection = (data,value)=>{
         btnDetails[i].onclick = showSessionModal;
         
     }
-        
-    
-  
-    
-  }
+        }
 
   
   // call a funtionn when any option is selected from select menu       
 const showDataAfterSelection = (value)=>{
-    fetch('backend.json')
-    .then(res => res.json())
-    .then(data =>{
-        console.log(data)
-        fillCardsAfterSelection(data,value);
-    }).catch((err =>{
-        console.log(err);
-        return;
-    }))
-    
-}
-//fill the select menu with trainer name
-const fillDataSelectOption = (data)=>{
+   
+        fillCardsAfterSelection(value);
+  }
+//fill the select menu with district name
+const fillDataSelectOption = ()=>{
     const selectElem = document.getElementById('select_main');
     var element = document.createElement("option");
     element.value = -1;
-    element.innerText = "select trainer";
+    element.innerText = "Select District";
     selectElem.append(element);
-    for(let i=0;i<data.length;i++){
-    var item = data[i].trainer;
+    for(let i=0;i<mainApiData.length;i++){
+    var item = mainApiData[i].DISTRICT;
     var element = document.createElement("option");
     element.innerText = item;
     element.value = i;
@@ -99,22 +87,23 @@ const fillDataSelectOption = (data)=>{
 }
 
 //fill the cards with details on initial load of page
-const fillCardsInitialLoad = (data)=>{
+const fillCardsInitialLoad = ()=>{
     
-    cardsCount = data.length;
+    cardsCount = mainApiData.length;
     showingResultCount.innerHTML = "Showing Results : " + cardsCount;
 
-    for(let i=0;i<data.length;i++){
+    for(let i=0;i<mainApiData.length;i++){
        
         cards_container_initial.style.display = "flex";
         cards_container_initial.innerHTML +=
         `<div class="card" style="border: 1px solid #EBD8C3; margin:10px; box-shadow: 0 0 10px gray; padding:5px; align:center">
         <div class="card-body">
-        <img class="card-img-top" src="${data[i].trainingImage}" alt="Card image cap">
-          <h5 class="card-title">${data[i].trainer}</h5>
-          <p class="card-text">${data[i].trainingName}</p>
+        <img class="card-img-top" src="${mainApiData[i].url}" alt="Card image cap">
+          <h5 class="card-title">${mainApiData[i].DISTRICT}</h5>
+          <p class="card-text"> District Code :  ${mainApiData[i].CODE}</p>
+          <p class="card-text"> Population :  ${mainApiData[i].POPULATION}</p>
           <a href="#" id="${i}" class="btn btn-primary btn-sm btnDetails" >Details</a>
-          <a href="#" class="btn btn-success btn-sm btnEnroll" >Enroll</a>
+          <a href="#" class="btn btn-success btn-sm btnEnroll" >Visit Wiki</a>
         </div>
       </div>`
     }
@@ -140,6 +129,9 @@ const fillCardsInitialLoad = (data)=>{
         btnDetails[i].onclick = showSessionModal;
         
     }
+
+ fillDataSelectOption();
+
 }
 
 const showDataOnLoad = ()=>{
@@ -147,9 +139,13 @@ const showDataOnLoad = ()=>{
     fetch('backend.json')
     .then(res => res.json())
     .then(data =>{
-        console.log(data)
-        fillDataSelectOption(data);
-        fillCardsInitialLoad(data);
+      
+        //copy data array to mainapidata array
+        mainApiData.push.apply(mainApiData,data);
+
+        console.log(typeof(data));
+        console.log(mainApiData.length);
+        fillCardsInitialLoad();
         
     }).catch((err =>{
         console.log(err);
