@@ -163,21 +163,31 @@ document.addEventListener('DOMContentLoaded',showDataOnLoad)
 const me_menu_modal = document.getElementById('me_menu_modal');
 const close_me_modal_btn = document.getElementById('close_me_modal_btn');
 
+
+
 const showMeModal = ()=>{
-    me_menu_modal.style.display = 'flex';
-    let img = document.createElement('img');
-    let pTag = document.createElement('p');
-    pTag.textContent = "Scan the QR to visit my portfolio";
-    me_menu_modal.appendChild(pTag);
-    img.style.width = "25%";
-    img.style.height = "25%";
-    img.src = "images/qr-portfolio-netlify.png";
-    me_menu_modal.appendChild(img);
-    close_me_modal_btn.style.display = 'flex';
+        
+        me_menu_modal.style.display = 'flex';
+
+        console.log(me_menu_modal.children());
+        me_menu_modal.replaceChildren
+        let img = document.createElement('img');
+        let pTag = document.createElement('p');
+    
+        pTag.textContent = "Scan the QR to visit my portfolio";
+        me_menu_modal.appendChild(pTag);
+        img.style.width = "25%";
+        img.style.height = "25%";
+        img.src = "images/qr-portfolio-netlify.png";
+        me_menu_modal.appendChild(img);
+        close_me_modal_btn.style.display = 'flex';
+    
+
     }
 
 
 const closeMeModal = ()=>{
+
     me_menu_modal.style.display = 'none';
 }
 
@@ -195,10 +205,47 @@ const closeDashModal = ()=>{
 
 
 //show modal for postoffice api
+
+let linkedinShow;
 const postofficeapi_menu_modal = document.getElementById('postofficeapi_menu_modal');
 const showPostOfficeApiModal = ()=>{
     postofficeapi_menu_modal.style.display = "flex";
+    linkedinShow =  setTimeout(showLinkedin,12000);
 }
+
+
+//show linkedin request after 10 seconds of modal being open
+
+let spaceApiData = document.getElementById('space_api_data');
+
+const showLinkedin = ()=>{
+let containerDiv = document.createElement('div');
+containerDiv.className = 'container';
+let jumbotronDiv = document.createElement('div');
+jumbotronDiv.className = 'jumbotron';
+
+let h3Elem = document.createElement('h3');
+h3Elem.textContent = 'Its been some time that you are using our product, please consider following me on linkedin';
+
+
+let aLink = document.createElement('a');
+aLink.href = 'https://www.linkedin.com/in/vishalmyshra';
+aLink.className = 'btn btn-md btn-success'
+aLink.textContent = 'linkedin'
+
+// let aLinkButton = document.createElement('button');
+// aLinkButton.textContent = 'linkedin';
+
+// aLinkButton.appendChild(aLink);
+
+jumbotronDiv.prepend(h3Elem);
+jumbotronDiv.appendChild(aLink);
+
+containerDiv.appendChild(jumbotronDiv);
+
+spaceApiData.appendChild(containerDiv)
+}
+
 
 //close modal for postoffice api
 
@@ -228,7 +275,7 @@ let resData;
 
 //function to put recieved post office api data to modal as list
 
-let spaceApiData = document.getElementById('space_api_data');
+
 const putDataToList = ()=>{
 
     let postOffLen = resData[0].PostOffice.length;
